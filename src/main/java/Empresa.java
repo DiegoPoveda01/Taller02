@@ -60,8 +60,17 @@ public class Empresa {
 	}
 
 	public void agregarBus(String patente) {
-		throw new UnsupportedOperationException();
+		Buses busEncontrado = buscarBus(patente);
+		if (busEncontrado != null) {
+			System.out.println("El bus con patente " + patente + " ya está registrado.");
+		} else {
+			Buses nuevoBus = new Buses();
+			nuevoBus.setPatente(patente);
+			buses.add(nuevoBus);
+			System.out.println("Se agregó un nuevo bus con patente: " + patente);
+		}
 	}
+
 
 	public void agregarConductor(String tipoLicencia) {
 		Conductores conductorEncontrado = buscarConductor(tipoLicencia);
