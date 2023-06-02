@@ -42,16 +42,6 @@ public class Principal {
         // Eliminar un bus de la empresa
         empresa.eliminarBus("KJ DP 23");
 
-        // Mostrar información de los viajes asociados a los buses
-        for (Buses bus : empresa.buses) {
-            if (bus.getViajeAsociado() != null) {
-                System.out.println("Bus con patente " + bus.getPatente() + " tiene el siguiente viaje asociado:");
-                System.out.println("ID del viaje: " + bus.getViajeAsociado().getId());
-                System.out.println("Destino del viaje: " + bus.getViajeAsociado().getDestino().getNombre());
-                System.out.println();
-            }
-        }
-
             // Eliminar un bus de la empresa
             empresa.eliminarBus("KJ DP 23");
             //Datos empresa
