@@ -6,6 +6,7 @@ public class Buses {
 	private int añosTrabajados;
 	private String marca;
 	private String modelo;
+	private Viajes viajeAsociado;
 	public Conductores conductores;
 	public ArrayList<Viajes> viajes = new ArrayList<Viajes>();
 
@@ -40,4 +41,12 @@ public class Buses {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
+	public Viajes getViajeAsociado() {
+		return viajeAsociado;
+	}
+
+	public void setViajeAsociado(Viajes viajeAsociado) {
+		this.viajeAsociado = viajeAsociado;
+	}
+
 }

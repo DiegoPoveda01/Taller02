@@ -68,6 +68,7 @@ public class Empresa {
 			nuevoBus.setPatente(patente);
 			buses.add(nuevoBus);
 			System.out.println("Se agregó un nuevo bus con patente: " + patente);
+			cantidadBuses++;
 		}
 	}
 
@@ -105,9 +106,6 @@ public class Empresa {
 		}
 	}
 
-	public void busesViajando() {
-		throw new UnsupportedOperationException();
-	}
 	public Buses buscarBus(String patente) {
 		for (Buses bus : buses) {
 			if (bus.getPatente().equals(patente)) {
