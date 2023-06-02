@@ -3,6 +3,7 @@
 import java.util.Date;
 
 public class Viajes {
+	private Buses busAsociado;
 	private Date horaSalida;
 	private Date horaLlegada;
 	public CiudadOrigen ciudadorigen;
@@ -22,5 +23,12 @@ public class Viajes {
 
 	public void setHoraLlegada(Date horaLlegada) {
 		this.horaLlegada = horaLlegada;
+	}
+	public Buses getBusAsociado(){
+		return this.busAsociado;
+	}
+
+	public void setBusAsociado(Buses busAsociado) {
+		this.busAsociado = busAsociado;
 	}
 }

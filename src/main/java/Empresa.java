@@ -84,9 +84,16 @@ public class Empresa {
 		}
 	}
 
-	public void viajesAsociados() {
-		throw new UnsupportedOperationException();
+	public void viajesAsociados(Viajes viaje, String patenteBus) {
+		Buses busAsociado = buscarBus(patenteBus);
+		if (busAsociado != null) {
+			viaje.setBusAsociado(busAsociado);
+			System.out.println("Se asoció el viaje al bus con patente: " + patenteBus);
+		} else {
+			System.out.println("No se encontró ningún bus con la patente: " + patenteBus);
+		}
 	}
+
 
 	public void eliminarBus(String patente) {
 		Buses busEncontrado = buscarBus(patente);
